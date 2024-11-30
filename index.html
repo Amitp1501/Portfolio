@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio | Amit Pandey</title>
+    <!-- Favicon -->
+    <link id="favicon" rel="icon" href="image/hero-image.png" type="image/x-png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- jQuery library (included once) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <!-- Navbar section starts -->
+    <header>
+        <button id="theme-toggle" class="fas fa-sun"></button>
+        <a href="#" class="logo">Amit Pandey</a>
+        <div id="menu" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#about">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Navbar section ends-->
+    <!-- hero section starts -->
+    <section class="home" id="home">
+        <div id="particles-js"></div>
+        <div class="content">
+            <h2>Hi There,<br /> I'm Amit <span>Pandey</span></h2>
+            <p>i am into <span class="typing-text"></span></p>
+            <a href="#about" class="btn">
+                <span>About Me</span>
+                <i class="fas fa-arrow-circle-down"></i>
+            </a>
+            <div class="socials">
+                <ul class="social-icons">
+                    <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/amit-g-pandey/"
+                            target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a class="github" aria-label="GitHub" href="https://github.com/Amitp1501" target="_blank"><i
+                                class="fab fa-github"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="image">
+            <img draggable="false" class="tilt" src="image/hero-image.png" alt="">
+        </div>
+    </section>
+    <!-- hero section ends -->
+    <!-- about section starts -->
+    <section class="about" id="about">
+        <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+        <div class="row">
+            <div class="image">
+                <img draggable="false" class="tilt" src="/image/about us.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>I'm Amit Pandey</h3>
+                <span class="tag"> Web & Shopify Frontend Developer</span>
+                <p>I am a Web & Shopify Frontend Developer based in Mumbai, India, with a Bachelor of Computer
+                    Applications (BCA) degree. I am deeply passionate about web development and continually strive to
+                    enhance my coding skills. My expertise lies in creating dynamic and responsive websites using HTML5,
+                    CSS3, jQuery, JavaScript, and MySQL. Driven by a commitment to self-improvement, I dedicate my time
+                    to refining my craft and building innovative web solutions.</p>
+                <div class="box-container">
+                    <!-- <div class="box">
+                        <p><span> age: </span> 22</p>
+                        <p><span> phone : </span> +91 XXX-XXX-XXXX</p>
+                    </div> -->
+                    <div class="box">
+                        <p><span> email : </span> amitpandey15012001.com</p>
+                        <p><span> place : </span> Mumbai, India - 421302</p>
+                    </div>
+                </div>
+                <div class="resumebtn">
+                    <a href="https://drive.google.com/file/d/1kUBsCiR6DltnZRu6vBjb_0Q5wq7_KbaV/view?usp=sharing"
+                        target="_blank" class="btn" download><span>Resume</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- about section ends -->
+    <!-- skills section starts -->
+    <section class="skills" id="skills">
+
+        <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+
+        <div class="container">
+            <div class="row" id="skillsContainer">
+
+                <!-- <div class="bar">
+              <div class="info">
+                <img src="https://img.icons8.com/color/48/000000/adobe-xd.png"/>
+                <span>AdobeXD</span>
+              </div>
+            </div> -->
+
+            </div>
+        </div>
+    </section>
+    <!-- skills section ends -->
+    <section id="projects">
+        <h1 class="heading">My <span>Projects</span></h1>
+        <p>Take a look at some of the exciting projects I have worked on!</p>
+    </section>
+
+    <section id="contact">
+        <h1 class="heading">Contact <span>Me</span></h1>
+        <p>Feel free to reach out for collaborations or inquiries!</p>
+    </section>
+    <!-- Scroll to Top -->
+    <div id="scroll-top" class="fas fa-arrow-up"></div>
+    <!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+    <!-- particle.js links -->
+    <script src="particles.min.js"></script>
+    <script src="app.js"></script>
+
+    <!-- typed.js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
+        integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- external JavaScript file links start -->
+    <script src="script.js"></script>
+    <!-- external JavaScript file links  end-->
+</body>
+
+</html>
