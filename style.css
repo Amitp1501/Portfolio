@@ -197,7 +197,11 @@ p {
   line-height: 1.8;
   margin-bottom: 3rem;
 }
-
+@media (max-width: 450px) {
+  section {
+    margin: 0px 10px;
+  }
+}
 /* Scroll to Top */
 #scroll-top {
   position: fixed;
