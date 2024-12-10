@@ -60,3 +60,26 @@ var typed = new Typed(".typing-text", {
 });
 
 // <!-- typed js effect ends -->
+$(window).on("scroll load", function () {
+  $("#menu").removeClass("fa-times");
+  $(".navbar").removeClass("nav-toggle");
+
+  if (window.scrollY > 100) {
+    document.querySelector("#scroll-top").classList.add("active");
+  } else {
+    document.querySelector("#scroll-top").classList.remove("active");
+  }
+
+  // scroll spy
+  $("section").each(function () {
+    let height = $(this).height();
+    let offset = $(this).offset().top - 200;
+    let top = $(window).scrollTop();
+    let id = $(this).attr("id");
+
+    if (top > offset && top < offset + height) {
+      $(".navbar ul li a").removeClass("active");
+      $(".navbar").find(`[href="#${id}"]`).addClass("active");
+    }
+  });
+});
