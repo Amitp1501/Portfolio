@@ -1136,7 +1136,14 @@ form .button-area {
 .btn i {
   font-size: 1rem;
 }
-
+section#projects {
+  padding: 30px 30px 20px 30px;
+}
+@media screen and (max-width: 600px) {
+  section#projects {
+    padding: 0;
+}
+}
 /* GitHub Button */
 .github {
   background-color: #333;
